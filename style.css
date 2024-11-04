@@ -152,3 +152,25 @@ nav a.active {
 }
 
 
+.home-img .img-box {
+    width: 32vw;
+    height: 32vw;
+    color: red;
+    border-radius: 50%;
+}
+
+.home-img .img-box .img-item {
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 50%;
+    position: relative;
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+
+}
