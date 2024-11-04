@@ -64,6 +64,56 @@ nav a.active{
     border-bottom: 3px solid #5c3c7e;
 }
 
+.Home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: white;
+}
+
+.home-text h1{
+    font-size: 55px;
+}
+
+.home-text h2{
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+
+.home-text p{
+    font-size: 16px;
+    margin-top: 10px 0 25px;
+}
+
+.home-text .btn-sci{
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #5c3c7e;
+    border: 2px solid #5c3c7e;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #5c3c7e;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #5c3c7e;
+    box-shadow: none;
+}
+
+
 @media(max-width:995px){
     nav{
         position: absolute;
