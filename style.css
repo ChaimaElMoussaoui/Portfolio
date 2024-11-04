@@ -77,12 +77,10 @@ nav a.active {
 
 @media(max-width:800px) {
     nav {
-        position: absolute;
+        position: relative;
         top: 100%;
         right: 0;
         width: 40%;
-        border-left: 3px solid #5c3c7e;
-        border-bottom: 3px solid #5c3c7e;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: 161616;
@@ -227,8 +225,8 @@ nav a.active {
 .home-img .img-box::after {
     content: '';
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     background: conic-gradient(transparent, transparent, 
     transparent, #9637fc);
     transform: rotate(0deg); 
