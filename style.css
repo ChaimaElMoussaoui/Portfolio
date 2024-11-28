@@ -23,12 +23,6 @@ body {
 }
 
 header {
-<<<<<<< HEAD
-=======
-    position: fixed;
-    top: 0;
-    left: 0;
->>>>>>> 50ceeee578a951c7589d0afc24496f74d9f17e34
     width: 100%;
     padding: 25px 9%;
     background-color: transparent;
@@ -79,24 +73,13 @@ nav a:hover {
     border-bottom: 3px solid #5c3c7e;
 }
 
-<<<<<<< HEAD
+
 .menu-icon {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
-=======
-@media(max-width:800px) {
-    nav {
-        position: relative;
-        top: 100%;
-        right: 0;
-        width: 40%;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: 161616;
-        border-top: 0.1 rem solid black;
->>>>>>> 50ceeee578a951c7589d0afc24496f74d9f17e34
+
 
 @media (max-width: 768px) {
     nav {
@@ -268,12 +251,7 @@ nav a:hover {
     position: absolute;
     width: 800px;
     height: 800px;
-    background: conic-gradient(transparent, transparent, 
-<<<<<<< HEAD
-    transparent, #9637fc);
-=======
-    transparent, #891aff);
->>>>>>> 50ceeee578a951c7589d0afc24496f74d9f17e34
+    background: conic-gradient(transparent, transparent, transparent, #9637fc);
     transform: rotate(0deg); 
     animation: rotate-border 10s linear infinite;
 }
@@ -310,7 +288,7 @@ nav a:hover {
    
 
 }
-<<<<<<< HEAD
+
 
 .container-maps {
     transition: transform 0.3s ease, box-shadow 0.3s ease;  
@@ -350,5 +328,3 @@ nav a:hover {
     font-size: 6rem;
     color: #5c3c7e;
 }
-=======
->>>>>>> 50ceeee578a951c7589d0afc24496f74d9f17e34
