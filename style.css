@@ -23,10 +23,6 @@ body {
 }
 
 header {
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 25px 9%;
     background-color: transparent;
@@ -45,19 +41,22 @@ header {
         opacity: 1;
     }
 }
-
-
-
 .logo {
     font-size: 3rem;
     color: #5c3c7e;
     cursor: pointer;
     font-weight: 800;
     transition: 0.5s ease;
+    text-decoration:none;
 }
 
 .logo:hover {
     transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
@@ -66,28 +65,44 @@ nav a {
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
+    text-decoration:none;
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
-nav a.active {
-    color: #5c3c7e;
+nav a:hover {
     border-bottom: 3px solid #5c3c7e;
 }
 
-@media(max-width:800px) {
-    nav {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #5c3c7e;
-        border-bottom: 3px solid #5c3c7e;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: 161616;
-        border-top: 0.1 rem solid black;
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        border: 1px solid #41026b;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav a {
+        color: #5c3c7e;
+        margin-left: 0;
     }
 }
 
@@ -180,6 +195,7 @@ nav a.active {
     color: black;
     font-weight: 600;
     transition: .5s;
+    margin-top: 10px;
 }
 
 .btn:hover {
@@ -191,6 +207,8 @@ nav a.active {
 
 .home-text .btn-sci .social-icons {
     margin-right: 20px;
+    margin-top: 10px;
+   
 }
 
 .home-text .btn-sci .social-icons a {
@@ -202,6 +220,7 @@ nav a.active {
     color: #5c3c7e;
     margin: 0 8px;
     transition: .5s;
+    text-decoration: none;
 }
 
 .home-text .btn-sci .social-icons a:hover {
@@ -227,12 +246,23 @@ nav a.active {
 .home-img .img-box::after {
     content: '';
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     background: conic-gradient(transparent, transparent, 
-    transparent, #922bff);
+    transparent, #9637fc);
+    transform: rotate(0deg); 
+    animation: rotate-border 10s linear infinite;
 }
 
+.home-img .img-box::after {
+    animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .home-img .img-box .img-item {
     width: 100%;
@@ -255,4 +285,43 @@ nav a.active {
     object-fit: cover;
    
 
+}
+
+.container-maps {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+} 
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: lowerCard 0.3s ease forwards;
+    border: 2px solid purple; /* Set the border color to purple */
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    animation: liftCard 0.3s ease forwards;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 100px;
+}
+
+.card-img-top {
+    right: -50px;
+}
+
+.card-body {
+    color: #000000;
+   
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 6rem;
+    color: #5c3c7e;
 }
